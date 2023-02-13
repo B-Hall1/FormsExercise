@@ -61,7 +61,8 @@
                 experience.</label>
             <br>
             <label for="password">Create a Password:</label>
-            <input type="password" name="password" minlength="5" maxlength="10">
+            <input type="password" name="password" pattern="(.{5,10})">
+            <!-- also can use minlength="5" maxlength="10" but no error message will be shown -->
             <br>
             <input type="submit" value="Submit">
         </fieldset>
