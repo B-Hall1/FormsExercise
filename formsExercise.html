@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,64 +8,62 @@
     <meta name="description" content="Web page about forms">
     <title>Forms Exercise</title>
 </head>
+
 <body>
     
-    <fieldset>
-        <legend>Customer Experience Survey</legend>
     <form>
-    <label for="storeNumber">Store Number</label>
-    <select name="storeNumber" id="storeNumber">
-    <option hidden="storeNumber">Select a Store</option>
-    <option>3109</option>
-    <option>2421</option>
-    <option>5357</option>
-    </select>
-</form>
-    <fieldset>
-        <legend>When you visited:</legend>
-        <label for="dvisit">Date Visited</label>
-        <input type="date" id="dvisit" max="2022-12-31">
-        <br>
-        <label for="timev">Time</label>
-        <input type="time" id="timev">
-    </fieldset>
-    <form>
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" placeholder="Name">
-        <br>
-        <label for="userEmail">Email</label>
-        <input type="email" id="userEmail" required placeholder="Email">
-    </form>
+        <fieldset>
+            <legend>Customer Experience Survey</legend>
+            <label for="storeNumber">Store Number</label>
+            <select name="storeNumber" id="storeNumber">
+                <option hidden="storeNumber">Select a Store</option>
+                <option>3109</option>
+                <option>2421</option>
+                <option>5357</option>
+            </select>
+            <fieldset>
+                <legend>When you visited:</legend>
+                <label for="dvisit">Date Visited</label>
+                <input type="date" id="dvisit" max="2022-12-31">
+                <br>
+                <label for="timev">Time</label>
+                <input type="time" id="timev">
+            </fieldset>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" placeholder="Name">
+            <br>
+            <label for="userEmail">Email</label>
+            <input type="email" id="userEmail" required placeholder="Email">
+            <fieldset>
+                <legend>How would you rate your level of satisfaction with your visit?</legend>
+                <input type="radio" name="satisfied">
+                <label for="satisfied">Satisfied</label>
+                <br>
+                <input type="radio" name="neutral">
+                <label for="neutral">Neither Satisfied Nor Dissatisfied</label>
+                <br>
+                <input type="radio" name="dissatisfied">
+                <label for="dissatisfied">Dissatisfied</label>
+            </fieldset>
+            <label for="experience">Tell us about your experience</label>
+            <br>
+            <textarea name="experience" id="experience" cols="20" rows="2"></textarea>
+            <br>
+            <label for="visits">Times visited last month:</label>
+            <br>
+            <input type="number" id="visits" min="1" max="30">
 
-    <fieldset>
-        <legend>How would you rate your level of satisfaction with your visit?</legend>
-        <input type="radio" name="satisfied">
-        <label for="satisfied">Satisfied</label>
-        <br>
-        <input type="radio" name="neutral">
-        <label for="neutral">Neither Satisfied Nor Dissatisfied</label>
-        <br>
-        <input type="radio" name="dissatisfied">
-        <label for="dissatisfied">Dissatisfied</label>
-    </fieldset>
-    <form>
-        <label for="experience">Tell us about your experience</label>
-        <br>
-        <textarea name="experience" id="experience" cols="20" rows="2"></textarea>
-        <br>
-        <label for="visits">Times visited last month:</label>
-        <br>
-        <input type="number" id="visits" min="1" max="30">
+            <input type="checkbox" id="contact">
+            <label for="contact" required>Please check the box if you would be willing to be contacted about your
+                experience.</label>
+            <br>
+            <label for="password">Create a Password:</label>
+            <input type="password" name="password">
+            <br>
+            <input type="submit" value="Submit">
+        </fieldset>
     </form>
-<form>
-    <input type="checkbox" id="contact">
-    <label for="contact" required>Please check the box if you would be willing to be contacted about your experience.</label>
-    <br>
-    <label for="password">Create a Password:</label>
-    <input type="password" name="password">
-    <br>
-    <input type="submit" value="Submit">
-</fieldset>
 
 </body>
+
 </html>
