@@ -10,24 +10,27 @@
 </head>
 
 <body>
-    
+
     <form>
         <fieldset>
             <legend>Customer Experience Survey</legend>
             <label for="storeNumber">Store Number</label>
             <select name="storeNumber" id="storeNumber">
-                <option hidden="storeNumber">Select a Store</option>
+                <option hidden>Select a Store</option>
                 <option>3109</option>
                 <option>2421</option>
                 <option>5357</option>
             </select>
             <fieldset>
                 <legend>When you visited:</legend>
+                <div>
                 <label for="dvisit">Date Visited</label>
-                <input type="date" id="dvisit" max="2022-12-31">
-                <br>
+                <input type="date" id="dvisit" value="2022-12-31" min="2022-02-09" max="2023-02-09">
+                </div>
+                <div>
                 <label for="timev">Time</label>
                 <input type="time" id="timev">
+                </div>
             </fieldset>
             <label for="fullName">Full Name:</label>
             <input type="text" id="fullName" placeholder="Name">
@@ -36,13 +39,13 @@
             <input type="email" id="userEmail" required placeholder="Email">
             <fieldset>
                 <legend>How would you rate your level of satisfaction with your visit?</legend>
-                <input type="radio" name="satisfied">
+                <input type="radio" name="radioLink" id="satisfied">
                 <label for="satisfied">Satisfied</label>
                 <br>
-                <input type="radio" name="neutral">
+                <input type="radio" name="radioLink" id="neutral" checked>
                 <label for="neutral">Neither Satisfied Nor Dissatisfied</label>
                 <br>
-                <input type="radio" name="dissatisfied">
+                <input type="radio" name="radioLink" id="dissatisfied">
                 <label for="dissatisfied">Dissatisfied</label>
             </fieldset>
             <label for="experience">Tell us about your experience</label>
@@ -53,8 +56,8 @@
             <br>
             <input type="number" id="visits" min="1" max="30">
 
-            <input type="checkbox" id="contact">
-            <label for="contact" required>Please check the box if you would be willing to be contacted about your
+            <input type="checkbox" id="contact" required>
+            <label for="contact">Please check the box if you would be willing to be contacted about your
                 experience.</label>
             <br>
             <label for="password">Create a Password:</label>
